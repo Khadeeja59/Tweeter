@@ -1,0 +1,24 @@
+.navbar-top {
+  height: 120px;
+  width:100%;
+  background-color:#4056A1;
+  color: #FFFFFF;
+  padding: 0 1.5em;
+  position: fixed;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+ }
+.navbar-logo {
+  font-family: 'Bungee', cursive;
+}
+.navbar-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+}
+.navbar-menu i {
+  color: red;  
+  margin-top: -20px;
+}
