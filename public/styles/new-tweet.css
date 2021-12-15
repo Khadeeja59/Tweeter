@@ -7,7 +7,8 @@
 
 }
 
-form {
+/* form { */
+#tweet-form {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -17,9 +18,9 @@ form {
 }
 
  #tweet-text {   
-  
+  font-size: 25px; 
   width: 100%;
-  font-weight: bold;
+  font-weight: bolder;
   background-color: #f4f1ec ;
   color: #545149;
   border-style: none;
@@ -27,6 +28,7 @@ form {
   margin-top: 10px;
 
 }
+
 .send-tweet {
   width:100%;
   margin-top: 1.5%;
@@ -64,7 +66,12 @@ form {
   font-family: 'Source Sans Pro', sans-serif;
   border: 5px solid #545149;
   padding: 0 10px;
-  
+  margin: 30px 0;
+;
+}
+
+.user {
+  vertical-align: super;
 }
 
 .tweet-header{
@@ -118,9 +125,9 @@ color: grey;
 /* hover*/
 
 article:hover{
-  /* box-shadow: 25px 30px rgba(38, 77, 184, 0.3); */
-  box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;}
-
+  box-shadow: 25px 30px rgba(38, 77, 184, 0.3);
+  /* box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;} */
+}
 .article .fa-solid.fa-flag:hover {
   color: yellow;
 }
