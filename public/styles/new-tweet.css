@@ -23,7 +23,8 @@ form {
   background-color: #f4f1ec ;
   color: #545149;
   border-style: none;
-  border-bottom: 4px solid #545149;
+  border-bottom: 5px solid #545149;
+  margin-top: 10px;
 
 }
 .send-tweet {
@@ -38,6 +39,7 @@ form {
   font-family: "Bungee",cursive;
   font-size: medium ;
   color: #ffffff;
+  transition:ease-out 0.3s ;
 }
 .counter {
   display: flex;
@@ -48,3 +50,84 @@ form {
 .counter-overlimit {
   color: red;
 }
+
+.tweets-container{
+  width: 100%;
+  margin-top: 40px;
+
+}
+.article {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-family: 'Source Sans Pro', sans-serif;
+  border: 5px solid #545149;
+  padding: 0 10px;
+  
+}
+
+.tweet-header{
+  width: 100%;
+  font-weight: bold;
+  background-color: #f4f1ec ;
+  color: #545149;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px 10px;
+}
+.tweet-header span{
+color: grey;
+
+}
+
+.article p{
+  border-bottom: 5px solid #545149;
+  width: 100%;
+  margin-bottom: 10px;
+
+}
+
+.tweet-footer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.tweet-footer span{
+  font-size: 15px;
+  margin: 10px 10px;
+}
+
+.tweet-footer div{
+  display: flex;
+  justify-content: space-between;
+}
+.article .fa-solid.fa-flag {
+  color: #4056A1;
+}
+.article .fa-solid.fa-retweet {
+   color: #4056A1;
+  ;
+}
+.article .fa-solid.fa-heart {
+  color: #4056A1;
+
+}
+
+/* hover*/
+
+article:hover{
+  /* box-shadow: 25px 30px rgba(38, 77, 184, 0.3); */
+  box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;}
+
+.article .fa-solid.fa-flag:hover {
+  color: yellow;
+}
+.article .fa-solid.fa-retweet:hover {
+  color: yellow;
+}
+.article .fa-solid.fa-heart:hover {
+  color: yellow;
+}
+
