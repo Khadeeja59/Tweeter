@@ -4,30 +4,25 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 $(document).ready(function() {
+  $(".error-1").hide();
+  $(".error-2").hide();
 
 const loadTweets = () => {
   $.ajax('/tweets', { method: 'GET' })
   .then(function (response) {
     renderTweets(response);
     console.log('Success',response);
-
-
-  // $.ajax({
-  //   url: '/tweets',
-  //   method: 'GET',
-  //   dataType: 'json',
-  //   success: (tweets) => {
-  //     console.log("data", tweets);
-  //     renderTweets(data);
-  //   },
-  //   error: (err) => {
-  //     console.log(`error: ${err}`)
-  //   } 
+ 
   });
 };
 
 loadTweets();
 
+const escape = function (str) {
+  let div = document.createElement("div");
+  div.appendChild(document.createTextNode(str));
+  return div.innerHTML;
+};
 
 const createTweetElement = function(tweetObj) {
 
@@ -42,7 +37,7 @@ let $tweet = $(`
 <span> ${tweetObj.user.handle} </span>
 </header>
 
-<p> ${tweetObj.content.text}</p>
+<p> ${escape(tweetObj.content.text)}</p>
 
 <footer class="tweet-footer">
 <span> ${timeago.format(tweetObj.created_at)}  </span>
@@ -53,7 +48,6 @@ let $tweet = $(`
 </div>
 </footer>
 </article> `);
-
 return $tweet;
 };
 
@@ -75,15 +69,23 @@ $form.submit(function(event){
   console.log(serializedData);
 
   
-  let charLength = $("#tweet-form").val().length;
+  let charLength = $("#tweet-text").val().length;
   // let charLength = $("new-tweet").val().length;
-
+  console.log(charLength);
   if ((charLength > 140)) {
-    alert("The tweet is too long");
+    $(".error-1").text("Character limit exceeded!!!!!").slideDown();
+    // alert("The tweet is too long");
+    return;
   }
-  else if ((charLength < 0)) {
-    alert("The tweet is empty");
+  else if ((charLength === 0)) {
+    //$(".error-2").show().slideDown();
+    $(".error-2").text("TWEET EMPTY!!! Please write a message.").slideDown();
+    
+    // alert("The tweet is empty");
+    return;
   }
+  $(".error-1").slideUp();
+  $(".error-2").slideUp();
   $.post('/tweets', serializedData, (response) => {
     console.log(response)
     loadTweets();
