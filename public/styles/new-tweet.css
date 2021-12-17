@@ -1,3 +1,4 @@
+/* main styling*/
 .container:{
   width: 100%;
   display: flex;
@@ -11,9 +12,7 @@
   flex-direction: column;
   align-items: flex-start;
   font-family: 'Source Sans Pro', sans-serif;
-
 }
-
 .error-1{
   width: 100%;
   border: 4px solid red;
@@ -26,7 +25,6 @@
   font-weight: bolder;
   font-family: 'Source Sans Pro', sans-serif;
 }
-/* error empty */
 .error-2{
   width: 100%;
   border: 4px solid red;
@@ -40,19 +38,15 @@
   font-family: 'Source Sans Pro', sans-serif;
  }
 
-
-
-/* form { */
+/* css styling for the form*/
 #tweet-form {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-around;
   width: 100%;
-  
 }
-
- #tweet-text {   
+#tweet-text {   
   font-size: 25px; 
   width: 100%;
   font-weight: bolder;
@@ -60,10 +54,8 @@
   color: #545149;
   border-style: none;
   border-bottom: 5px solid #545149;
-  margin-top: 10px;
-
+  padding-top: 10px;
 }
-
 .send-tweet {
   width:100%;
   margin-top: 1.5%;
@@ -87,11 +79,9 @@
 .counter-overlimit {
   color: red;
 }
-
 .tweets-container{
   width: 100%;
   margin-top: 40px;
-
 }
 .article {
   width: 100%;
@@ -102,13 +92,10 @@
   border: 5px solid #545149;
   padding: 0 10px;
   margin: 30px 0;
-;
 }
-
 .user {
   vertical-align: super;
 }
-
 .tweet-header{
   width: 100%;
   font-weight: bold;
@@ -121,16 +108,13 @@
 }
 .tweet-header span{
 color: grey;
-
 }
-
 .article p{
   border-bottom: 5px solid #545149;
   width: 100%;
   margin-bottom: 10px;
-
+  word-wrap: break-word;
 }
-
 .tweet-footer {
   display: flex;
   justify-content: space-between;
@@ -140,7 +124,6 @@ color: grey;
   font-size: 15px;
   margin: 10px 10px;
 }
-
 .tweet-footer div{
   display: flex;
   justify-content: space-between;
@@ -154,14 +137,12 @@ color: grey;
 }
 .article .fa-solid.fa-heart {
   color: #4056A1;
-
 }
 
-/* hover*/
+/* hovering on the tweets and icons */
 
 article:hover{
   box-shadow: 25px 30px rgba(38, 77, 184, 0.3);
-  /* box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;} */
 }
 .article .fa-solid.fa-flag:hover {
   color: yellow;
