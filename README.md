@@ -3,11 +3,11 @@ Tweeter is a simple and responsive single-page Twitter clone. It is built using 
 
 ## Final Product
 
-!["tweet-box"](https://github.com/Khadeeja59/tweeter/blob/master/docs/tweet_box.jpg?raw=true)
+!["Screenshot of tweet-box"](https://github.com/Khadeeja59/tweeter/blob/master/docs/tweet_box.jpg?raw=true)
 
-!["warning: when the character-limit exceeds"](https://github.com/Khadeeja59/tweeter/blob/master/docs/char_limit.jpg?raw=true)
+!["Screenshot of warning: when the character-limit exceeds"](https://github.com/Khadeeja59/tweeter/blob/master/docs/char_limit.jpg?raw=true)
 
-!["responsive design"](https://github.com/Khadeeja59/tweeter/blob/master/docs/mobile_view.jpeg?raw=true)
+!["Screenshot of responsive design"](https://github.com/Khadeeja59/tweeter/blob/master/docs/mobile_view.jpeg?raw=true)
 
 ## Getting Started
 - Fork and clone this repository.

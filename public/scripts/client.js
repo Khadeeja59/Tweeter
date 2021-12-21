@@ -44,6 +44,7 @@ $(document).ready(function() {
       $(".tweets-container").prepend(createTweetElement(tweet));
     }
   };
+
   const $form = $('#tweet-form');
   $form.submit(function(event){
     event.preventDefault();
@@ -66,6 +67,9 @@ $(document).ready(function() {
     $.post('/tweets', serializedData, (response) => {
       console.log(response);
       loadTweets();
+      $('#tweet-text').val('');
+      $('.counter').text(140);
+  
     })
   });
 });
